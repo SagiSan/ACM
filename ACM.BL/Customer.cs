@@ -25,6 +25,18 @@ namespace ACM.BL
                 return LastName + ", " + FirstName;
             }
         }
+        public Customer Retrieve(int customerId)
+        {
+            return new Customer();
+        }
+        public List<Customer> Retrieve()
+        {
+            return new List<Customer>();
+        }
+        public bool Save()
+        {
+            return true;
+        }
         public bool Validate()
         {
             var isValid = true;
