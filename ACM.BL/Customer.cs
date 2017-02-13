@@ -25,5 +25,12 @@ namespace ACM.BL
                 return LastName + ", " + FirstName;
             }
         }
+        public bool Validate()
+        {
+            var isValid = true;
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(EmailAdress)) isValid = false;
+            return isValid;
+        }
     }
 }
